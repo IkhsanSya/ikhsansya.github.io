@@ -4,9 +4,370 @@
 <title></title>
 <meta name="" content="">
 </head>
-<body background="spongebob.jpg">
-<h1 style="padding: 250px 0px 0px 200px; font-size: 400%;"><em>"hahahaha..."</em></h1>
-<h2 style="padding: 0px 0px 0px 200px;">- Spongebob Squarepants</h2>
-
+<style>
+	body {
+		font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    	font-weight: 200;
+		font-size: 14px;
+    	line-height: 1.42857143;
+    	color: #333;
+    	background-color: #ededeb;
+	}
+	td {
+		padding: 5px 5px 5px 5px;
+	}
+	.header {
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		position: fixed;
+  		max-height: 100px;
+  		color: #ffffff;
+  		background-color: #ec4413;
+  		display: block;
+  		padding-top: 15px;
+		padding-bottom: 0px;
+	}
+	.footer {
+		width: 100%;
+		position: fixed;
+  		max-height: 100px;
+  		color: #ffffff;
+  		background-color: #ec4413;
+  		padding-top: 15px;
+		padding-bottom: 15px;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+	}
+	.logo {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 230px;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   	padding: 10px;
+	   	color: #ffffff;
+	}
+	.logo-right {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 230px;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   
+	   	color: #ffffff;
+	   	float: right;
+	}
+	.credit {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 100%;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   	padding: 10px;
+	   	color: #ffffff;
+	}
+	.wrap-left {
+		width:50%;	
+		margin: 0 auto;
+		padding-top: 70px;
+		padding-left: 20px;
+		padding-bottom: 100px;
+		float: left;
+	}
+	.wrap-right{
+		width:50%px;	
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-right: 100px;
+		float: right;
+	}
+	.wrap {
+		width:1200px;	
+		margin: 0 auto;
+	}
+	.col-frm-wrap {
+		width: 100%;
+		height: 20px;
+		margin-bottom: 10px;
+		
+	}
+	.col-frm-label {
+		width: 40%;
+		float: left;
+		text-align: right;
+	}
+	.col-frm-input {
+		width: 55%;
+		margin-left: 5%;
+		float: right;
+	}
+	.input-control {
+	    font-size: 12px;
+	    line-height: 1.42857143;
+	    color: #555;
+	    background-color: #fff;
+	    background-image: none;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    padding-left: 4px;
+	    padding-bottom: 3px;
+	    padding-top: 3px;
+	}
+	.btn-submit {
+		display: inline-block;
+	    margin-bottom: 0;
+	    font-weight: 400;
+	    text-align: center;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    white-space: nowrap;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    border-radius: 4px;
+	    background-color: #0ac7f5;
+	    color: #ffffff;
+	}
+	.btn-submit:hover {
+		display: inline-block;
+	    margin-bottom: 0;
+	    font-weight: 400;
+	    text-align: center;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    white-space: nowrap;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    border-radius: 4px;
+	    background-color: #079bc0;
+	    color: #ffffff;
+	}
+	.btn-cancel {
+		display: inline-block;
+	    margin-bottom: 0;
+	    font-weight: 400;
+	    text-align: center;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    white-space: nowrap;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    border-radius: 4px;
+	    background-color: #f0a70f;
+	    color: #ffffff;
+	}
+	.btn-cancel:hover {
+		display: inline-block;
+	    margin-bottom: 0;
+	    font-weight: 400;
+	    text-align: center;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    white-space: nowrap;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    border-radius: 4px;
+	    background-color: #b67e0c;
+	    color: #ffffff;
+	}
+</style>
+<body>
+	<div class="header">
+		<a href="#" class="logo"><strong>FORM</strong> Pembuatan My-KTP</a>
+		<a href="#" class="logo-right">2017</a>
+	</div>
+		<div class="wrap">
+		<div class="wrap-left">
+			<form role="form">
+			
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						No. Pendaftaran
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="number" placeholder="ex : 001" required="wajib diisi !!"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Nama Depan
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="nama depan"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Nama Belakang
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="nama belakang"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Password
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="password" placeholder="********"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Jenis Kelamin
+					</label>
+					<div class="col-frm-input">
+						<input type="radio"/> Laki-laki
+						<input type="radio"/> Perempuan
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Tempat/Tanggal Lahir
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" size="7" placeholder="tempat"/>
+						<input class="input-control" type="date"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Pekerjaan
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="pekerjaan"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Status
+					</label>
+					<div class="col-frm-input">
+						<input type="checkbox"> Menikah</input>
+						<input type="checkbox"> Belum Menikah</input>
+						<input type="checkbox"> Janda</input>
+						<input type="checkbox"> Duda</input>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						E-mail
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="email" placeholder="example@gmail.com"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Agama
+					</label>
+					<div class="col-frm-input">
+						<select class="input-control">
+								<option>Islam</option>
+								<option>Kristen</option>
+								<option>Katolik</option>
+								<option>Hindu</option>
+								<option>Budha</option>
+								<option>Kong Hu Chu</option>
+							</select>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Alamat
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="alamat (Dusun)"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Rt/Rw
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="RT/RW"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Kelurahan
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="kelurahan"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Kecamatan
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="kecamatan"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Kabupaten
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="kabupaten"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap">
+					<label class="col-frm-label">
+						Provinsi
+					</label>
+					<div class="col-frm-input">
+						<input class="input-control" type="text" placeholder="provinsi"/>
+					</div>
+				</div>
+				
+				<div class="col-frm-wrap" align="center">
+						<button class="btn-submit">Daftar</button> 
+						<button class="btn-cancel">Batal</button>
+				</div>
+				
+			</form>
+		</div>
+		<div class="wrap-right">
+			<img src="member.png">
+		</div>
+		</div>
+		<div class="footer" align="center">
+			<a href="#" class="credit">Pemrograman Web - Pendidikan Teknik Informatika 2016</a>
+		</div>
 </body>
 </html>
