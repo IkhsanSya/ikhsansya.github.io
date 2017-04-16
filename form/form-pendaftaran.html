@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+</head>
+<style>
+	body {
+		font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    	font-weight: 200;
+		font-size: 12px;
+    	line-height: 1.42857143;
+    	color: #333;
+    	background-color: #ededeb;
+	}
+	td {
+		padding: 5px 5px 5px 5px;
+	}
+	.header {
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		position: fixed;
+  		max-height: 100px;
+  		color: #ffffff;
+  		background-color: #ec4413;
+  		display: block;
+  		padding-top: 15px;
+		padding-bottom: 0px;
+	}
+	.footer {
+		width: 100%;
+		position: fixed;
+  		max-height: 100px;
+  		color: #ffffff;
+  		background-color: #ec4413;
+  		padding-top: 15px;
+		padding-bottom: 15px;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+	}
+	.logo {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 230px;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   	padding: 10px;
+	   	color: #ffffff;
+	}
+	.logo-right {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 230px;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   
+	   	color: #ffffff;
+	   	float: right;
+	}
+	.credit {
+		text-decoration: none;
+	    height: 50px;
+	    font-size: 20px;
+	    text-align: center;
+	    width: 100%;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    font-weight: 300;
+	   	padding: 10px;
+	   	color: #ffffff;
+	}
+	.wrap-left {
+		width:50%;	
+		margin: 0 auto;
+		padding-top: 70px;
+		padding-left: 20px;
+		padding-bottom: 100px;
+		float: left;
+	}
+	.wrap-right{
+		width:50%px;	
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-right: 100px;
+		float: right;
+	}
+	.wrap {
+		width:1200px;	
+		margin: 0 auto;
+	}
+</style>
+<body>
+	<div class="header">
+		<a href="#" class="logo"><strong>FORM</strong> Pembuatan My-KTP</a>
+		<a href="#" class="logo-right">2017</a>
+	</div>
+		<div class="wrap">
+		<div class="wrap-left">
+			<form role="form">
+				<table>
+					<tr>
+						<td>No. Pendaftaran</td>
+						<td>:</td>
+						<td><input type="number"/></td>
+					</tr>
+					<tr>
+						<td>Nama Depan</td>
+						<td>:</td>
+						<td><input type="text"/></td>
+					</tr>
+					<tr>
+						<td>Nama Belakang</td>
+						<td>:</td>
+						<td><input type="text"/></td>
+					</tr>
+					<tr>
+						<td>Tempat/Tanggal Lahir</td>
+						<td>:</td>
+						<td><input type="date"/></td>
+					</tr>
+					<tr>
+						<td>Pekerjaan</td>
+						<td>:</td>
+						<td><input type="text"/></td>
+					</tr>
+					<tr>
+						<td>Status</td>
+						<td>:</td>
+						<td>
+							<input type="checkbox"> Menikah</input>
+							<input type="checkbox"> Belum Menikah</input>
+							<input type="checkbox"> Janda</input>
+							<input type="checkbox"> Duda</input>
+						</td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td>:</td>
+						<td><input type="email"/></td>
+					</tr>
+					<tr>
+						<td>Agama</td>
+						<td>:</td>
+						<td>
+							<select>
+								<option>Islam</option>
+								<option>Kristen</option>
+								<option>Katolik</option>
+								<option>Hindu</option>
+								<option>Budha</option>
+								<option>Kong Hu Chu</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Alamat</td>
+						<td>:</td>
+						<td><textarea></textarea></td>
+					</tr>
+					<tr>
+						<td>Rt/Rw</td>
+						<td>:</td>
+						<td><input type="text" placeholder="RT/RW"/></td>
+					</tr>
+					<tr>
+						<td>Kelurahan</td>
+						<td>:</td>
+						<td><input type="text" placeholder="Kelurahan"/></td>
+					</tr>
+					<tr>
+						<td>Kecamatan</td>
+						<td>:</td>
+						<td><input type="text" placeholder="Kecamatan"/></td>
+					</tr>
+					<tr>
+						<td>Kabupaten</td>
+						<td>:</td>
+						<td><input type="text" placeholder="Kabupaten"/></td>
+					</tr>
+					<tr>
+						<td>Provinsi</td>
+						<td>:</td>
+						<td><input type="text" placeholder="Provinsi"/></td>
+					</tr>
+					<tr>
+						<td>Jenis Kelamin</td>
+						<td>:</td>
+						<td>
+							<input type="radio"/> Laki-laki
+							<input type="radio"/> Perempuan
+						</td>
+					</tr>
+					<tr>
+						<td>Tanggal Pendaftaran</td>
+						<td>:</td>
+						<td><input type="date"/></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center"><button>Daftar</button> <button>Batal</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="wrap-right">
+			<img src="member.png">
+		</div>
+		</div>
+		<div class="footer" align="center">
+			<a href="#" class="credit">Pemrograman Web - Pendidikan Teknik Informatika 2016</a>
+		</div>
+</body>
+</html>
