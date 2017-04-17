@@ -43,7 +43,7 @@ body, html {
   padding: 18px;
   font-size: 2vw;
   letter-spacing: 10px;
-  font-family: open sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .name span.border:hover{
   border: 0.3vw solid #000000;
