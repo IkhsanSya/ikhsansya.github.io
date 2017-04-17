@@ -95,8 +95,8 @@ body,html {
 }
 .homepage {
 	position: fixed;
-	bottom:20px;
-	right: 20px;
+	bottom:20;
+	right: 20;
 	opacity: 0.5;
 }
 .homepage:hover {
