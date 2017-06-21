@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kuis - Pemrograman Web</title>
+		<link href="ini-css.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="bungkus" class="container">
+			<div class="title">KUIS BERHITUNG - SEKOLAH DASAR</div>
+			<div id="pertanyaan" class="question"></div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="pil1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="pil2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="pil3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="pil4"></span></label>
+			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Lanjut ..</button>
+		</div>
+		<div id="result" class="container result" style="display:none;">
+		</div>
+		<a href="index.html"><button class="back-btn" id="backHome" style="display:none;">Kembali</button></a>
+		<div class="container-bawah">
+			<label class="penyemangat">16520244010 - Ikhsan Syarifuddin - Pendidikan Teknik Informatika - Universitas Negeri Yogyakarta - 2017</label>
+		</div>
+		<script src="javascript-pertanyaan.js"></script>
+		<script src="javascript-quiz.js"></script>
+	</body>
+</html>
