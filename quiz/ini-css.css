@@ -1,0 +1,185 @@
+
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container{
+	height: 300px;
+	width: 1000px;
+	position: absolute;
+	top:35%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: #0D47A1;
+	padding: 20px;
+	border: 10px solid #1565C0;
+	border-radius: 40px;
+}
+
+.container-materi{
+	height: 300px;
+	width: 1300px;
+	position: absolute;
+	top:35%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 20px;
+	border-radius: 40px;
+	text-align: center;
+}
+
+.container-bawah{
+	height: 50px;
+	width: 1000px;
+	position: absolute;
+	top:70%;
+	left:49%;
+	transform: translateX(-50%) translateY(-50%);;
+	padding: 20px;
+	text-align: center;
+}
+
+.title{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font: normal normal bold 2vw 'Open Sans',sans-serif;
+}
+
+.question{
+	padding: 20px;
+	font-size: 22px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin: 10px 0 10px 0;
+	color: #1565C0;
+}
+
+.option{
+	width: 220px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: #FFFFFF;
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border-radius: 10px;
+}
+
+.option:hover{
+	background: #08038C;
+	color: #f6f6f6;
+}
+
+.next-btn{
+	border: none;
+	outline: none;
+	background: #FFFFFF;
+	width: 100px;
+	height: 35px;
+	border-radius: 10px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+
+.next-btn:hover{
+	background: #08038C;
+	color: #f6f6f6;
+}
+
+.result{
+	height: 100px;
+	text-align: center;
+	font-size: 75px;
+	color: #ffffff;
+}
+
+.option input:checked .option{
+	background: #08038C;
+	color: #000;
+}
+
+.penyemangat{
+	width: 1000px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border-radius: 10px;
+	top: 70%;
+	border: 3px solid #08038C;
+}
+
+.back-btn{
+	border: none;
+	outline: none;
+	background: #0D47A1;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	top: 50%;
+	position: absolute;
+	left: 45%;
+	color: #FFFFFF;
+}
+
+.back-btn:hover{
+	background: #08038C;
+	color: #f6f6f6;
+}
+.kembali{
+	border: none;
+	outline: none;
+	background: #0D47A1;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	top: 75%;
+	position: absolute;
+	left: 45%;
+	float: left;
+	color: #FFFFFF;
+}
+
+.materi{
+	border: none;
+	outline: none;
+	background: #0D47A1;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	top: 70%;
+	position: absolute;
+	left: 35%;
+	float: left;
+	color: #FFFFFF;
+}
+
+.mulai{
+	border: none;
+	outline: none;
+	background: #0D47A1;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	top: 70%;
+	position: absolute;
+	left: 52%;
+	float: left;
+	color: #FFFFFF;
+}
